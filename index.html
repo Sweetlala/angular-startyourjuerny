@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" ng-App="flyApp">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Angfly</title>
+	<!------------------->
+	<link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="styles/owl.carousel.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+	<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+	<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+	<!------------------->
+</head>
+
+<body>
+
+	<div class="super_container">
+
+		<!-- Header -->
+		<header class="header">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="header_content d-flex flex-row align-items-center justify-content-start">
+							<div class="header_content_inner d-flex flex-row align-items-end justify-content-start">
+								<div class="logo"><a href="">ROS Travell</a></div>
+								<nav class="main_nav">
+									<ul class="d-flex flex-row align-items-start justify-content-start">
+										<li class="active"><a href="#/">Home</a></li>
+										<li><a href="#!/fly">Search for your trip</a></li>
+									</ul>
+								</nav>
+								<div class="header_phone ml-auto">Call us: 00-00 000 000 00</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- Home -->
+		<div class="home">
+			<div class="home_slider_container">
+				<div class="owl-carousel owl-theme home_slider">
+					<div class="owl-item">
+						<div class="background_image" style="background-image:url(images/home_slider.jpg)"></div>
+						<div class="home_slider_content_container">
+							<div class="container">
+								<div class="row">
+									<div class="col">
+										<div class="home_slider_content">
+											<div class="home_title">
+												<h2>Let us take you away</h2>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- view -->
+		<div class="container" ng-view>
+		</div>
+
+		<!-- Intro -->
+		<div class="intro">
+			<div class="intro_background" style="background-image:url(images/intro.png)"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="intro_container">
+							<div class="row">
+
+								<!-- Intro Item -->
+								<div class="col-lg-4 intro_col">
+									<div class="intro_item d-flex flex-row align-items-end justify-content-start">
+										<div class="intro_icon"><img src="images/beach.svg" alt=""></div>
+										<div class="intro_content">
+											<div class="intro_title">Top Destinations</div>
+											<div class="intro_subtitle">
+												<p>Nulla pretium tincidunt felis, nec.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Intro Item -->
+								<div class="col-lg-4 intro_col">
+									<div class="intro_item d-flex flex-row align-items-end justify-content-start">
+										<div class="intro_icon"><img src="images/wallet.svg" alt=""></div>
+										<div class="intro_content">
+											<div class="intro_title">The Best Prices</div>
+											<div class="intro_subtitle">
+												<p>Sollicitudin mauris lobortis in.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Intro Item -->
+								<div class="col-lg-4 intro_col">
+									<div class="intro_item d-flex flex-row align-items-end justify-content-start">
+										<div class="intro_icon"><img src="images/suitcase.svg" alt=""></div>
+										<div class="intro_content">
+											<div class="intro_title">Amazing Services</div>
+											<div class="intro_subtitle">
+												<p>Nulla pretium tincidunt felis, nec.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+
+		<footer class="footer">
+			<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/footer_1.jpg"
+			 data-speed="0.8"></div>
+			<div class="container">
+				<div class="row footer_contact_row">
+					<div class="col-xl-10 offset-xl-1">
+						<div class="row">
+
+							<!-- Footer Contact Item -->
+							<div class="col-xl-4 footer_contact_col">
+								<div class="footer_contact_item d-flex flex-column align-items-center justify-content-start text-center">
+									<div class="footer_contact_icon"><img src="images/sign.svg" alt=""></div>
+									<div class="footer_contact_title">give us a call</div>
+									<div class="footer_contact_list">
+										<ul>
+											<li>Office Landline: +46 0000 00 000 000</li>
+											<li>Mobile: +46 0000 00 0000 000</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<!-- Footer Contact Item -->
+							<div class="col-xl-4 footer_contact_col">
+								<div class="footer_contact_item d-flex flex-column align-items-center justify-content-start text-center">
+									<div class="footer_contact_icon"><img src="images/trekking.svg" alt=""></div>
+									<div class="footer_contact_title">come & drop by</div>
+									<div class="footer_contact_list">
+										<ul style="max-width:190px">
+											<li>Helsingborg</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<!-- Footer Contact Item -->
+							<div class="col-xl-4 footer_contact_col">
+								<div class="footer_contact_item d-flex flex-column align-items-center justify-content-start text-center">
+									<div class="footer_contact_icon"><img src="images/around.svg" alt=""></div>
+									<div class="footer_contact_title">send us a message</div>
+									<div class="footer_contact_list">
+										<ul>
+											<li>info@ros.com</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col text-center">
+				Copyright &copy;By ROS</a>
+			</div>
+		</footer>
+	</div>
+	<!--Angular file-->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+	<script src="https://code.angularjs.org/1.7.5/angular-route.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/controller.js"></script>
+	<script src="js/services.js"></script>
+	<!--jq-->
+	<script src="js/jquery-3.2.1.min.js"></script>
+
+	<script src="js/custom.js"></script>
+	<script src="js/popper.js"></script>
+	<!--bootstrap js-->
+	<script src="js/bootstrap.min.js"></script>
+	<!--plug ins-->
+	<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+	<script src="plugins/parallax-js-master/parallax.min.js"></script>
+
+
+</body>
+
+</html>

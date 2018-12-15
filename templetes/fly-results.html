@@ -1,0 +1,28 @@
+<section>
+        <div class="row table_container">
+                <table class="table" id="Flight-view">
+                <thead class="thead">
+                   <tr>
+                       <th  scope="col" ><h3 class="tittle">Airline </h3></th>
+                       <th  scope="col"><h3 class="tittle">Departure </h3></th>
+                       <th scope="col"><h3 class="tittle">Duration </h3></th>
+                       <th scope="col"><h3 class="tittle">Arrival </h3></th>
+                       <th scope="col"><h3 class="tittle">	Fare </h3></th>
+                   </tr>
+                </thead>
+
+                <tbody id="flight-body"  ng-repeat="resa in resor">
+
+                     <tr>
+                         
+                         <td><h3> {{resa.airline}}</h3></td>
+                         <td><h3>{{resa.deptime}}</h3></td>
+                         <td><h3>{{resa.duration}}</h3><i class="fa fa-spinner fa-spin" style="font-size:24px"></i></td>
+                         <td><h3>{{resa.arrtime}}</h3><i style='font-size:24px' class='fas'>&#xf5af;</i></td>
+                         <td><h3>{{resa["fare"].totalfare | currency}}</h3></td>
+                     </tr>
+                </tbody>
+               </table>
+           </div>
+        </section>
+        

@@ -1,0 +1,35 @@
+<section class="home_search">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="home_search_container">
+                    <div class="home_search_title">Search for your trip</div>
+                    <div class="home_search_content">
+
+                        <form class="home_search_form" id="home_search_form" ng-submit="fly(dep, arriv, date1, pass)">
+                            <div class="d-flex flex-lg-row flex-column align-items-start justify-content-lg-between justify-content-start">
+                                <input type="text" class="search_input search_input_1" ng-model="dep" placeholder="Departure Airport">
+                                <input type="text" class="search_input search_input_2" ng-model="arriv" placeholder="Destiation Airport">
+                                <input type="date" class="search_input search_input_3" ng-model="date1" placeholder="Fly Out">
+                                <label id="adults">
+                                    <select id="Passengers" ng-model="pass"class="col form-control">
+                                        <option>Passengers</option>
+                                        <option value='1'>1</option>
+                                        <option value='2'>2</option>
+                                        <option value='3'>3</option>
+                                        <option value='4'>4</option>
+                                        <option value='5'>5</option>
+                                        <option value='6'>6</option>
+                                        <option value='7'>7</option>
+                                        <option value='8'>8</option>
+                                        <option value='9'>9</option>
+                                    </select>
+                                </label>
+                                <button type="submit" class="btn btn-primary colmax home_search_button">Search </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
